@@ -1,0 +1,50 @@
+|-- .gitignore
+|-- eslint.config.mjs
+|-- jsconfig.json
+|-- next.config.mjs
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.mjs
+|-- public
+    |-- aboutus-img.png
+    |-- file.svg
+    |-- globe.svg
+    |-- hero-bg.png
+    |-- img-1.png
+    |-- img-2.png
+    |-- img-3.png
+    |-- img-4.png
+    |-- inner-focus.png
+    |-- logo1.png
+    |-- logo2.png
+    |-- logo3.png
+    |-- logo4.png
+    |-- logo5.png
+    |-- logo6.png
+    |-- logo7.png
+    |-- logo8.png
+    |-- message-icon.png
+    |-- next.svg
+    |-- outer-focus.png
+    |-- person.png
+    |-- plus.png
+    |-- portfolio.png
+    |-- star.png
+    |-- vercel.svg
+    |-- window.svg
+|-- README.md
+|-- src
+    |-- app
+        |-- favicon.ico
+        |-- globals.css
+        |-- layout.js
+        |-- page.js
+    |-- components
+        |-- AboutUs.jsx
+        |-- Colloboration.jsx
+        |-- Footer.jsx
+        |-- HeroSection.jsx
+        |-- Navbar.jsx
+        |-- Portfolio.jsx
+        |-- Testimonials.jsx
+        |-- WhatWeOffer.jsx
