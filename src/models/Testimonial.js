@@ -15,3 +15,4 @@ const TestimonialSchema = new mongoose.Schema({
 });
 
 export default mongoose.models.Testimonial || mongoose.model('Testimonial', TestimonialSchema);
+//sample
