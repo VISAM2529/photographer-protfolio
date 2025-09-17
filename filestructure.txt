@@ -1,3 +1,4 @@
+|-- .env.local
 |-- .gitignore
 |-- eslint.config.mjs
 |-- jsconfig.json
@@ -35,6 +36,21 @@
 |-- README.md
 |-- src
     |-- app
+        |-- api
+            |-- about
+                |-- route.js
+            |-- clients
+                |-- route.js
+            |-- hero
+                |-- route.js
+            |-- navigation
+                |-- route.js
+            |-- portfolio
+                |-- route.js
+            |-- services
+                |-- route.js
+            |-- testimonials
+                |-- route.js
         |-- favicon.ico
         |-- globals.css
         |-- layout.js
@@ -48,3 +64,13 @@
         |-- Portfolio.jsx
         |-- Testimonials.jsx
         |-- WhatWeOffer.jsx
+    |-- lib
+        |-- mongodb.js
+    |-- models
+        |-- About.js
+        |-- Client.js
+        |-- Hero.js
+        |-- Navigation.js
+        |-- Portfolio.js
+        |-- Service.js
+        |-- Testimonial.js
