@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   return (
     <section
+      name="home"
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/hero-bg.png')" }}
     >
@@ -14,10 +18,9 @@ const Hero = () => {
         {/* Main Heading */}
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 leading-tight" style={{ fontFamily: "var(--font-bebas-neue)" }}>
           <span>CAPTURING </span>
-         <span className="text-stroke text-[#FFC857]">STORIES</span>
-
+          <span className="text-stroke text-[#FFC857]">STORIES</span>
           <span> THROUGH THE </span>
-           <span className="text-stroke text-[#FFC857]">LENS</span>
+          <span className="text-stroke text-[#FFC857]">LENS</span>
         </h1>
 
         {/* Subtext */}
@@ -27,13 +30,20 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-          <button
-            className="border-2 bg-[#FFC857]/10 border-[#FFC857] text-yellow-400 hover:bg-[#FFC857] hover:text-black font-normal py-3 px-8 transition-all duration-300 tracking-wider"
+          {/* React Scroll Link to Portfolio Section */}
+          <ScrollLink
+            to="portfolio" // id of the section you want to scroll to
+            smooth={true}
+            duration={800}
+            className="cursor-pointer border-2 bg-[#FFC857]/10 border-[#FFC857] text-yellow-400 hover:bg-[#FFC857] hover:text-black font-normal py-3 px-8 transition-all duration-300 tracking-wider"
             style={{ fontFamily: "var(--font-bebas-neue)" }}
           >
             VIEW PORTFOLIO
-          </button>
+          </ScrollLink>
+
+          {/* Mailto Button */}
           <button
+            onClick={() => window.location.href = "mailto:info@abcphotography.com"}
             className="border-2 bg-[#FFC857]/10 border-[#FFC857] text-yellow-400 hover:bg-[#FFC857] hover:text-black font-normal py-3 px-8 transition-all duration-300 tracking-wider"
             style={{ fontFamily: "var(--font-bebas-neue)" }}
           >

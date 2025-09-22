@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E1E1E] text-white py-8 md:py-12 px-4">
+    <footer name="contact" className="bg-[#1E1E1E] text-white py-8 md:py-12 px-4">
       <div className="max-w-6xl mx-auto text-center space-y-4 md:space-y-6">
         
         {/* Studio Address */}

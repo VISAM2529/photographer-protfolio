@@ -66,7 +66,7 @@ const ProudCollaborations = () => {
   }
 
   return (
-    <div className="flex justify-center w-full min-h-screen items-center bg-black p-4 sm:p-6 lg:p-8">
+    <div name="clients" className="flex justify-center w-full min-h-screen items-center bg-black p-4 sm:p-6 lg:p-8">
       <div className="flex flex-col lg:flex-row items-center lg:items-start max-w-7xl w-full">
         
         {/* Title Section - Mobile */}
@@ -124,10 +124,16 @@ const ProudCollaborations = () => {
 
           {/* Get in Touch Section */}
           <div className="text-center">
-            <button className="bg-[#FFC857]/10 border-2 border-[#FFC857] text-[#FFC857] hover:bg-[#FFC857] hover:text-black font-bold py-2 sm:py-3 px-6 sm:px-8 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#FFC857]/30" style={{ fontFamily: "var(--font-bebas-neue)" }}>
-              GET IN TOUCH
-            </button>
-          </div>
+  <a href="mailto:info@abcphotography.com">
+    <button
+      className="bg-[#FFC857]/10 border-2 border-[#FFC857] text-[#FFC857] hover:bg-[#FFC857] hover:text-black font-bold py-2 sm:py-3 px-6 sm:px-8 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#FFC857]/30"
+      style={{ fontFamily: "var(--font-bebas-neue)" }}
+    >
+      GET IN TOUCH
+    </button>
+  </a>
+</div>
+
         </div>
 
         {/* Title Section - Desktop (Right side) */}

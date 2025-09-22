@@ -28,7 +28,7 @@ const Portfolio = () => {
 
     fetchPortfolioData();
   }, []);
-
+  console.log(portfolioData)
   // Skeleton loader component
   const PortfolioSkeleton = () => {
     return (
@@ -60,7 +60,7 @@ const Portfolio = () => {
   }
 
   return (
-    <div className="flex justify-center w-full min-h-screen bg-white p-4 sm:p-6 lg:p-8">
+    <div name="portfolio" className="flex justify-center w-full min-h-screen bg-white p-4 sm:p-6 lg:p-8">
       <div className="flex flex-col lg:flex-row items-start max-w-7xl w-full">
         {/* Portfolio Title - Mobile */}
         <div className="w-full lg:hidden mb-6">

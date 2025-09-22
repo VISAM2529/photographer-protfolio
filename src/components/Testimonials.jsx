@@ -137,16 +137,18 @@ const TestimonialSection = () => {
                 </p>
 
                 {/* Star Rating */}
-                <div className="flex mb-6 sm:mb-8 space-x-1">
-                  {[...Array(5)].map((_, index) => (
-                    <img 
-                      key={index}
-                      src={index < testimonial.rating ? "/star-filled.png" : "/star-outline.png"} 
-                      alt="Star" 
-                      className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 opacity-90"
-                    />
-                  ))}
-                </div>
+               {/* Star Rating */}
+<div className="flex mb-6 sm:mb-8 space-x-1">
+  {[...Array(testimonial.rating)].map((_, index) => (
+    <img 
+      key={index}
+      src="/star.png" 
+      alt="Star" 
+      className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 opacity-90"
+    />
+  ))}
+</div>
+
 
                 {/* Author Info */}
                 <div className="flex items-center">

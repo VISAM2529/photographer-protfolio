@@ -105,17 +105,25 @@ const AboutUs = () => {
   }
 
   return (
-    <div className="flex justify-center w-full min-h-screen bg-white p-4 sm:p-6 lg:p-8">
+    <div name="about" className="flex justify-center w-full min-h-screen bg-white p-4 sm:p-6 lg:p-8">
       <div className="flex flex-col lg:flex-row items-start max-w-7xl w-full">
         {/* Sidebar Title - Vertical text */}
         <div className="w-full lg:w-16 flex lg:flex-col items-start mb-6 lg:mb-0 lg:mr-8">
           {/* Mobile horizontal layout */}
-          <div className="lg:hidden w-full h-12 bg-[#FFC857] flex items-center justify-center text-black font-bold text-xl sm:text-2xl mb-4" style={{ 
-            fontFamily: "var(--font-bebas-neue)",
-            letterSpacing: "0.1em"
-          }}>
-            {aboutData.title || "ABOUT US"}
-          </div>
+         <div className="w-full lg:hidden mb-6">
+  <div
+    className="w-full bg-[#FFC857] flex items-center justify-center text-black font-bold text-xl sm:text-2xl py-3 px-4"
+    style={{
+      fontFamily: "var(--font-bebas-neue)",
+      letterSpacing: "0.1em",
+      textAlign: "center",
+    }}
+  >
+    {loading ? "LOADING..." : (aboutData?.title || "About Me")}
+  </div>
+</div>
+
+
           
           {/* Desktop vertical layout */}
           <div className="hidden lg:block w-12 h-48 bg-[#FFC857] flex items-center justify-center text-black font-bold text-2xl" style={{ 
@@ -136,7 +144,7 @@ const AboutUs = () => {
             {/* Main Image */}
             <div className="overflow-hidden rounded-lg">
               <img 
-                src={aboutData.image || "/aboutus-img.png"} 
+                src={"/aboutus-img.png"} 
                 alt="Photographer" 
                 className="w-full h-auto object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2" 
               />
